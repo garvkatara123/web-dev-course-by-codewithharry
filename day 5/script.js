@@ -1,0 +1,1 @@
+alert("Do you want to see Hanuman ji image?")
