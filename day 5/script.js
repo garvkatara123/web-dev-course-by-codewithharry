@@ -1,1 +1,1 @@
-alert("Do you want to see Hanuman ji image?")
+alert("Do you want to see Garv Katara pic?")
