@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Boxmodel</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            background-color: aqua;
+            color: red;
+        }
+        .box1{
+            color :yellow;
+            padding: 10px;
+            border: 2px solid black;
+            margin: 25px;
+            height: 200px;
+            box-sizing: border-box;
+            /* box-sizing: border-box; ye property use krne se padding or border ko bhi height or width me include kr liya jata h. */
+            /* or agr aap box-sizing: content-box; use krte ho to padding or border ko height or width me include nahi kiya jata h. */
+        }
+        .box2{
+            color: blue;
+            padding: 10px;
+            border: 2px solid blue;
+            margin: 25px;
+            height: 200px;
+            box-sizing: border-box;
+            /* margin collapse:- jb agr do margin overlape krti h to jo maximum margin h bss vo aa jayegi ek baar dono ke beech me . */
+        }
+
+    </style>
+</head>
+<body>
+    <div class = "box box1"> I am a  first box on this webpage.</div>
+    <div class="box box2">I am second box on this webpage.</div></div>
+</body>
+</html>
