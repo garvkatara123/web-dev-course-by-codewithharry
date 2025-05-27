@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* The specificity of this selector is 1  */
+        h1 {
+            color: aqua;
+        }
+
+        /* The specificity of this selector is 10  */
+        .cpurple {
+            color: purple;
+        }
+
+        /* The specificity of this selector is 1 + 10 = 11  */
+        h1.yellow {
+            color: yellow;
+        }
+
+        /* This is an example of attribute selector. The specificity of this selector is 10 */
+        [data-x=a] {
+            color: maroon;
+        }
+
+        /* The specificity of this selector is 10  */
+        .cred {
+            color: red;
+        }
+
+        /* The specificity of this selector is 1 + 10 + 10 + 10 + 10 = 41  */
+        a.harryclass.rohan-class[href]:hover {
+            color: blueviolet;
+        }
+        *******************************
+        h1{
+            /* background-color: red; */
+            color: aqua;
+        }
+        .yellow {
+            color: yellow;
+        }
+        .cred {
+            color: red;
+        }
+        .cpurple {
+            color: purple;
+        }
+        /* ye data vale ka use krke style krna css ko attribute selector khte h.  */
+        [data-x=a] {
+            color: green;
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1 class = "yellow cred cpurple" data-x="a">CSS Specificity</h1>
+        <h3>Preference of selector for apply style on any element or line or paragraph:-</h3>
+        <ol>
+            <li>Inline selector</li>
+            <li>Id selector</li>
+            <li>Class or Attribute selector</li>
+            <li>Element selector</li>
+            <li>Universal selector</li>
+        </ol>
+    </div>
+</body>
+</html>
