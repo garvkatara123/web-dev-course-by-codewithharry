@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Display Properties</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            border: 2px solid black;
+            display: inline-block;
+            /* ek display flex hota h uske baad justify content centre krne se jo box ke andr likha content h co entre me aa jata h  */
+            margin: 10px;
+            padding: 10px;
+            width: 200px;
+            /* agr me sirf inline krta hu to margin jo ke boreder ke hrr side se lgti h ot padding jo ke block ke andr content ke hrr side se lgti h usme top se nhi lgegi bss vaki sb side se lagegi  */
+            /* iss cheej ka hll ye h ke display ko sirf inline na krke use inline block krdo  */
+        }
+        .box1{
+            /* display: none;
+            visibility: hidden;  */
+            /* ye element ko hide kr dega but space lega */
+            /* display: none; ise element ko hide kr dega or space bhi nhi lega */
+        }
+        span{
+            background-color: lightblue;
+            border: 2px solid black;
+        }
+    </style>
+    <!-- display: inline-block; se div jo ke block element h vo inline element me change ho jata h or 2 div ka content ek line me aa jata h. -->
+</head>
+<body>
+    <div class = "box box1">
+        I am a block element.
+    </div>
+    <div class = "box">I am another block element.</div>
+    <span>i am a good</span>
+    <span>boy</span>
+</body>
+</html>
