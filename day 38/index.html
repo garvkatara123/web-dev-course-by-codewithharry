@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Ultra Edit Website Design</title>
-        <!-- <p>code with harry ne Qick quiz 6 de h jisme ke ek website bnani h flexbox ka use krke Ultra Edit jesi</p> -->
+        <!-- <p>code with harry ne Quick quiz 6 de h jisme ke ek website bnani h flexbox ka use krke Ultra Edit jesi</p> -->
         <style>
         *{
             background-color: rgb(134, 229, 229);
@@ -84,6 +84,16 @@
         }
         .last p{
             background-color: #575ca2;
+        }
+        @media(max-width: 768px) {
+            .container {
+                flex-direction: column;
+                align-items: center;
+            }
+            .box1, .box2, .box3, .box4, .box5, .box6, .box7, .box8 {
+                width: 90%;
+            }
+            
         }
     </style>
     </head>
