@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <style>
+        div {
+            /* background-color: yellow;
+            color: red; */
+        }
+        /* Class Selector */
+        .red{
+            background-color: yellow;
+            color: red;
+        }
+        /* ID Selector */
+        #green {
+            background-color: darkblue;
+            color: white;
+        }
+        /* Child Selector */
+        /* ye property selector ka use krke hum child element ko pakadte h lekin ye sirf direct child ko pakadta h.  */
+        div > p {
+            background-color: lightgreen;
+            color: black;
+        }
+        /* Descendant Selector  */
+        /* ye property selector ka use krke hum child element ko pakadte h lekin ye direct child ko nahi pakadta h. agr hmara element present h selector ke andr to bss ye rule follow hoga */
+        div p {
+            background-color: lightblue;
+            color: black;
+        }
+        /* Universal Selector */
+        /* ye selector sabhi elements ko pakadta h or unka margin khtm kr deta h left side se. */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        /* pseudo selector  */
+        /* pseudo selector ka use krke hum kisi element ke hover hone pr ya kisi aur condition pr uski property change kr sakte h */
+        a:visited{
+            color: yellow ;
+        }
+        a:link{
+            color: green;
+        }
+        /* a:hover :- ye jb aap kisi link pe mouse le jaate ho to ye active ho jata h or color change kr deta h. */
+        a:hover{
+            color: blue;
+        }
+        /* a:active :- ye jb aap kisi link pe cick krte ho to ye active ho jata h or color change kr deta h. */
+        a:active{
+            color: red;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class = "red">
+        I am a div element.
+    </div>
+    <div id = "green">
+        hey! I am Garv Katara and I am a Software Engineering Student.
+        <article>
+            <p>I am a paragraph inside the div element</p>
+        </article>
+    </div>
+    <a href="https://www.google.com">Go to Google</a>
+</body>
+</html>
