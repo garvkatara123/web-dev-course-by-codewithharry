@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bonce Animation</title>
+    <style>
+        .container{
+            background-color: blue;
+            width: 80vw;
+            height: 80vh;
+        }
+        .circle{
+            background-color: red;
+            width: 100px;
+            height: 100px;
+            border-radius: 70px;
+            animation: Garvfirstanimation;
+            animation-duration: 780ms;
+            animation-timing-function: linear;
+            animation-direction: alternate-reverse;
+            animation-iteration-count: infinite;
+        }
+        @keyframes Garvfirstanimation {
+            0% {
+                transform: translateY(0) translateX(0);
+                /* background-color: red; */
+            }
+            20%{
+                translateX(13px);
+            }
+            25% {
+                transform: translateX();
+            }
+            50% {
+                transform: translateY(calc(80vh - 100px));
+                /* background-color: green; */
+            }
+            100% {
+                transform: translateY(0);
+                /* background-color: yellow; */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="circle">
+            
+        </div>
+    </div>
+</body>
+</html>
