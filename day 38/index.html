@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ultra Edit Website Design</title>
+        <!-- <p>code with harry ne Quick quiz 6 de h jisme ke ek website bnani h flexbox ka use krke Ultra Edit jesi</p> -->
+        <style>
+        *{
+            background-color: rgb(134, 229, 229);
+        }
+        .logo-title {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 10px;
+        }
+        h2{
+            display: flex;;
+        }
+        h3{
+            text-align: center;
+        }
+        input[type="button"]{
+            display: block;
+            margin: 0 auto;
+           justify-content: right;
+        }
+        .side-content {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+        }
+        .container {
+            background-color: #575ca2;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            padding: 20px;
+            width: 100%;
+            height: auto;
+        }
+        .box1, .box2, .box3, .box4, .box5 , .box6, .box7, .box8 {
+            background-color: #f0f0f0;
+            padding: 20px;
+            margin: 12px;
+            border-radius: 10px;
+            width: 23%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        .foot {
+            display: flex;
+            justify-content: centre;
+            padding: 10px;
+            gap: 10px;
+            margin-top: 10px;
+        }
+        .b1, .b2 {
+            background-color: #4CAF50;
+            color: white;
+            padding: 8px 12px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 10px;
+            text-align: center;
+            width: 80px;
+            margin: 10px;
+        }
+        .head{
+            margin-bottom: 10px;
+            font-weight: bold;
+            font-size: 16px;
+            
+        }
+        .last{
+            background-color: black;
+            text-align: center;
+            text-emphasis: 
+            margin: 20px;
+            padding: 10px;
+        }
+        .last p{
+            background-color: #575ca2;
+        }
+        @media(max-width: 768px) {
+            .container {
+                flex-direction: column;
+                align-items: center;
+            }
+            .box1, .box2, .box3, .box4, .box5, .box6, .box7, .box8 {
+                width: 80%;
+            }
+            
+        }
+    </style>
+    </head>
+    <body>
+        <header>
+            <div class="logo-title">
+                <img src="ultraedit.png" width="40" alt="Logo">
+                <h2>Ultra Edit</h2>
+            </div>
+            <div class="side-content">
+                <div class="c1">Products</div>
+                <div class="c2">Pricing</div>
+                <div class="c3">Resources</div>
+                <div class="c4">About us</div>
+                <div class="c5">help</div>
+            </div>
+            <h3>Download Ultra Edit for Windows</h3>
+            <input type="button" value="Download Now"
+                style="width: 100px; height: 30px; font-size: 20px; background-color: #4CAF50; color: white; border: none; border-radius: 5px; cursor: pointer;"><br>
+            <h3>Download and try UltraEdit before you buy it! This download includes the full Windows version of the text editor.</h3>
+            <input type="button" value="Mac/Linux Download"
+                style="width: 100px; height: 30px; font-size: 10px; background-color: #4CAF50; color: white; border: none; border-radius: 5px; cursor: pointer;"><br><br>
+        </header>
+        <main>
+            <div class="container">
+                <div class="box1">
+                    <header class = "head">English</header>
+                    <footer class="foot">
+                        <div class="b1">Download 32-bit</div>
+                        <div class="b2">Download 64-bit</div>
+                    </footer>
+                </div>
+                <div class="box2">
+                    <header class = "head">Deutsch</header>
+                    <footer class="foot">
+                        <div class="b1">Download 32-bit</div>
+                        <div class="b2">Download 64-bit</div>
+                    </footer>
+                </div>
+                <div class="box3">
+                    <header class = "head">Italiano</header>
+                    <footer class="foot">
+                        <div class="b1">Download 32-bit</div>
+                        <div class="b2">Download 64-bit</div>
+                    </footer>
+                </div>
+                <div class="box4">
+                    <header class = "head">Espanol</header>
+                    <footer class="foot">
+                        <div class="b1">Download 32-bit</div>
+                        <div class="b2">Download 64-bit</div>
+                    </footer>
+                </div>
+                <div class="box5">
+                    <header class = "head">français</header>
+                    <footer class="foot">
+                        <div class="b1">Download 32-bit</div>
+                        <div class="b2">Download 64-bit</div>
+                    </footer>
+                </div>
+                <div class="box6">
+                    <header class = "head">Português brasileiro</header>
+                    <footer class="foot">
+                        <div class="b1">Download 32-bit</div>
+                        <div class="b2">Download 64-bit</div>
+                    </footer>
+                </div>
+                <div class="box7">
+                    <header class = "head">日本</header>
+                    <footer class="foot">
+                        <div class="b1">Download 32-bit</div>
+                        <div class="b2">Download 64-bit</div>
+                    </footer>
+                </div>
+                <div class="box8">
+                    <header class = "head">한국어</header>
+                    <footer class="foot">
+                        <div class="b1">Download 32-bit</div>
+                        <div class="b2">Download 64-bit</div>
+                    </footer>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div class="last">
+                <p>© 2025 UltraEdit. All rights reserved.</p>
+                <p>Privacy Policy | Terms of Service</p>
+
+            </div>
+        </footer>
+    </body>
+</html>
