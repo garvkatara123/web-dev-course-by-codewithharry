@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Object Fit and Position</title>
+    <style>
+        .container{
+            height: 466px;
+            width: 488px;
+            border : 2px solid black;
+            background-color: aqua;
+        }
+        img{
+            width: 488px;
+            height: 466px;
+            /* object-fit: contain */
+            object-fit: cover;
+            object-position: top left;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="https://cdn.pixabay.com/photo/2018/08/04/11/30/draw-3583548_1280.png" alt="">
+    </div>
+</body>
+</html>
